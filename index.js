@@ -32,7 +32,7 @@ function displayBar() {
         });
 
         dayHighlight(chartBar);
-        setTimeout(hoverInfo(chartBar), 1000); 
+        hoverInfo(chartBar)
     });
 }
 
@@ -56,10 +56,10 @@ function hoverInfo(bar) {
         bar.addEventListener('mouseover', function (e) {
             const info = e.currentTarget.firstChild;
             info.classList.add('visible');
-            if (bar.classList.contains('date-highlight')) {
-                bar.classList.add('highlight-opacity');
-            } else { 
+            if (!bar.classList.contains('date-highlight')) {
                 bar.classList.add('bar-opacity');
+            } else {
+                bar.classList.add('highlight-opacity');
             }
         });
     });
