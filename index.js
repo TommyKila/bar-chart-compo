@@ -32,7 +32,7 @@ function displayBar() {
         });
 
         dayHighlight(chartBar);
-        hoverInfo(chartBar);
+        setTimeout(hoverInfo(chartBar), 1000); 
     });
 }
 
