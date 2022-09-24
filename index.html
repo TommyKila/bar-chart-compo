@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="text/javascript" src="./index.js" defer></script>
+  <script type="text/json" src="./data.json"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+
+<body>
+  <main>
+    <section>
+      <div>
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+      <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <circle fill="#382314" cx="48" cy="24" r="24" />
+          <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+        </g>
+      </svg>
+    </section>
+    <section>
+      <h1>Spending - Last 7 days</h1>
+
+      <div class="chart-cols">
+      </div>
+
+      <hr>
+
+      <div class="section-evaluation">
+
+        <div>
+          <p class="small-font brown-text">Total this month</p>
+          <h1 class="large-font">$478.33</h1>
+        </div>
+
+        <div>
+          <h1 class="small-font">+2.4%</h1>
+          <p class="small-font brown-text">from last month</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>
